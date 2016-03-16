@@ -3,10 +3,8 @@
  * http://github.com/ajoslin/angular-promise-tracker
  * Created by Andy Joslin; Licensed under Public Domain
  */
-
-(function() {
-
-angular.module('ajoslin.promise-tracker', [])
+module.exports = require('angular')
+.module('ajoslin.promise-tracker', [])
 
 .provider('promiseTracker', function() {
   var trackers = {};
@@ -130,5 +128,3 @@ angular.module('ajoslin.promise-tracker', [])
     };
   }];
 });
-
-}());
